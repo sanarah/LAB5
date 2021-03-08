@@ -2,7 +2,6 @@ const Prod = require('../models/prod');
 
 
 exports.get_test = (req,res,next) => {
-    console.log("get test");
 
 
     res.render('admin/add_product', {
@@ -15,8 +14,6 @@ exports.get_test = (req,res,next) => {
 };
 
 exports.post_test = (req,res,next) => {
-    console.log("post test");
-    console.log(req.body);
     const title = req.body.title;
     const image = req.body.image
     const price = req.body.price;
